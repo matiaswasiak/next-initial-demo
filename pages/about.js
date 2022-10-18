@@ -2,18 +2,18 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function About() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Home - Matias</title>
-        <meta name="description" content="Home Page" />
+        <title>About - Matias</title>
+        <meta name="description" content="About Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Ir a <Link href="/about">About</Link>
+          Ir a <Link href="/">Home</Link>
         </h1>
 
         <p className={styles.description}>
