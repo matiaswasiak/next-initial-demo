@@ -15,6 +15,8 @@ export default function About() {
       <NavBar />
 
       <main className={styles.main}>
+        <h1>Contact</h1>
+
         <h1 className={styles.title}>
           Ir a <Link href="/">Home</Link>
         </h1>

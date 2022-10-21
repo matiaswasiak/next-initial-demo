@@ -1,9 +1,17 @@
+import { ActiveLink } from "./ActiveLink";
+
 export const NavBar = () => {
   return (
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
+      <ActiveLink text="Home" href="/">
+        Home
+      </ActiveLink>
+      <ActiveLink text="About" href="/about">
+        About
+      </ActiveLink>
+      <ActiveLink text="Contact" href="/contact">
+        Contact
+      </ActiveLink>
     </nav>
   );
 };
