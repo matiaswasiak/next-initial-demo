@@ -4,12 +4,15 @@ import Link from "next/link";
 const style = {
   color: "#0070f3",
   textDecoration: "underline",
+  marginRight: "20px",
 };
 
 export const ActiveLink = ({ text, href }) => {
-  const router = useRouter();
+  const { asPath } = useRouter();
 
-  console.log(router);
-
-  return <Link href={href}>{text}</Link>;
+  return (
+    <Link href={href}>
+      <a style={asPath === href ? style : null}>{text}</a>
+    </Link>
+  );
 };
